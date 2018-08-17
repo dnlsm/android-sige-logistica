@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.cpqd.instrumentacao.sige">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.LoginActivity">
+            <intent-filter>
+                <action android:name="br.com.cpqd.answer.action.SUCCESSFULLY_LOGIN"/>
+                <action android:name="br.com.cpqd.answer.action.SUCCESSFULLY_LOGOUT"/>
+                <action android:name="br.com.cpqd.answer.action.SUCCESSFULLY_DATA_RECEIVED"/>
+
+                <category android:name="br.com.cpqd.answer.category.SESSION"/>
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".home.HomeActivity"></activity>
+
+        <service android:name=".login.service.SessionManager">
+            <intent-filter>
+                <action android:name="br.com.cpqd.ask.action.LOGIN"/>
+                <action android:name="br.com.cpqd.ask.action.LOGOUT"/>
+                <action android:name="br.com.cpqd.ask.action.IS_LOGGED"/>
+
+                <category android:name="br.com.cpqd.ask.category.SESSION"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

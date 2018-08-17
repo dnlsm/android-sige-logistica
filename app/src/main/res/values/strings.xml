@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SIGE</string>
+    <string name="loading_text">Carregando...</string>
+    <string name="username_field_name">usuário</string>
+    <string name="password_field_name">senha</string>
+    <string name="app_tab_name">SIGE - LOGÍSTICA</string>
+</resources>

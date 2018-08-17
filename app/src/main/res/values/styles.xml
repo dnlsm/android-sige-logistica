@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColor">#101010</item>
+
+        <item name="android:navigationBarColor">@color/analogous1</item>
+    </style>
+
+    <style name="AppTheme.NavigationView" parent="AppTheme">
+        <item name="android:textColor">@color/onSurface</item>
+        <item name="android:textColorPrimary">@color/onSurfaceIcon</item>
+        <item name="android:textColorSecondary">@color/onSurface</item>
+        <item name="android:textColorTertiary">@color/analogous2_700</item>
+        <item name="android:background">@color/surface</item>
+        <item name="android:itemTextAppearance">@color/complementary200</item>
+    </style>
+
+    <style name="AppTheme.CardButton" parent="AppTheme">
+        <item name="android:buttonStyle">
+            @style/Widget.AppCompat.Button.Borderless.Colored
+        </item>
+        <item name="colorAccent">@color/analogous2_400</item>
+    </style>
+</resources>

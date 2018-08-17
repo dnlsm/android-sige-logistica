@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary900">#00489a</color>
+    <color name="primary800">#0065b8</color>
+    <color name="primary700">#0076ca</color>
+    <color name="primary600">#0c88dc</color>
+    <color name="primary500">#1595ea</color>
+    <color name="primary400">#3ea4ed</color>
+    <color name="primary300">#62b4ef</color>
+    <color name="primary200">#8ec9f4</color>
+    <color name="primary100">#badef8</color>
+    <color name="primary50">#e3f2fc</color>
+
+
+    <color name="complementary900">#ca5400</color>
+    <color name="complementary800">#d46b02</color>
+    <color name="complementary700">#db7a05</color>
+    <color name="complementary600">#e0880a</color>
+    <color name="complementary500">#e4930e</color>
+    <color name="complementary400">#e7a22b</color>
+    <color name="complementary300">#ebb24f</color>
+    <color name="complementary200">#f0c880</color>
+    <color name="complementary100">#f6ddb2</color>
+    <color name="complementary50">#fbf2e0</color>
+
+
+    <color name="analogous1_900">#00624a</color>
+    <color name="analogous1_800">#007f69</color>
+    <color name="analogous1_700">#009078</color>
+    <color name="analogous1_600">#00a189</color>
+    <color name="analogous1_500">#00af97</color>
+    <color name="analogous1_400">#00bda8</color>
+    <color name="analogous1_300">#00cab9</color>
+    <color name="analogous1_200">#71dace</color>
+    <color name="analogous1_100">#ace8e1</color>
+    <color name="analogous1_50">#def6f4</color>
+
+    <color name="analogous2_900">#0000c2</color>
+    <color name="analogous2_800">#0011ca</color>
+    <color name="analogous2_700">#2e18d0</color>
+    <color name="analogous2_600">#4520d8</color>
+    <color name="analogous2_500">#5325de</color>
+    <color name="analogous2_400">#7349e4</color>
+    <color name="analogous2_300">#8f6be9</color>
+    <color name="analogous2_200">#b097ee</color>
+    <color name="analogous2_100">#d0c0f4</color>
+    <color name="analogous2_50">#ede5fb</color>
+
+    <color name="triadic1_900">#2000bc</color>
+    <color name="triadic1_800">#4400c4</color>
+    <color name="triadic1_700">#5400ca</color>
+    <color name="triadic1_600">#6410d2</color>
+    <color name="triadic1_500">#6f16d8</color>
+    <color name="triadic1_400">#8744df</color>
+    <color name="triadic1_300">#9e69e5</color>
+    <color name="triadic1_200">#ba96ec</color>
+    <color name="triadic1_100">#d6c0f3</color>
+    <color name="triadic1_50">#efe5fa</color>
+
+
+    <color name="triadic2_900">#8d0367</color>
+    <color name="triadic2_800">#b40270</color>
+    <color name="triadic2_700">#ca0076</color>
+    <color name="triadic2_600">#e1007d</color>
+    <color name="triadic2_500">#f30081</color>
+    <color name="triadic2_400">#f23b97</color>
+    <color name="triadic2_300">#f262ac</color>
+    <color name="triadic2_200">#f491c4</color>
+    <color name="triadic2_100">#f7bcdc</color>
+    <color name="triadic2_50">#fbe5f1</color>
+
+
+    <color name="primary">@color/primary700</color>
+    <color name="complementary">@color/complementary900</color>
+    <color name="analogous1">@color/analogous1_300</color>
+    <color name="analogous2">@color/analogous2_800</color>
+    <color name="triadic1">@color/triadic1_700</color>
+    <color name="triadic2">@color/triadic2_700</color>
+
+    <color name="background">#f0f0f0</color>
+    <color name="surface">#ffffff</color>
+    <color name="cardSurface">@color/surface</color>
+    <color name="onSurface">#505050</color>
+    <color name="onSurfaceIcon">#909090</color>
+
+
+
+
+    <color name="colorPrimary">@color/primary700</color>
+    <color name="colorPrimaryDark">@color/primary900</color>
+    <color name="colorAccent">@color/triadic1_400</color>
+
+</resources>
