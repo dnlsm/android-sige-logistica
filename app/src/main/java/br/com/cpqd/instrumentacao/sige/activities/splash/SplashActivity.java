@@ -1,9 +1,7 @@
-package br.com.cpqd.instrumentacao.sige.splash;
+package br.com.cpqd.instrumentacao.sige.activities.splash;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
 
@@ -11,11 +9,11 @@ import org.json.JSONObject;
 
 import java.io.File;
 
-import br.com.cpqd.instrumentacao.sige.LoginBroadcastReceiver;
+import br.com.cpqd.instrumentacao.sige.services.LoginBroadcastReceiver;
 import br.com.cpqd.instrumentacao.sige.R;
-import br.com.cpqd.instrumentacao.sige.home.HomeActivity;
-import br.com.cpqd.instrumentacao.sige.login.LoginActivity;
-import br.com.cpqd.instrumentacao.sige.login.service.SessionManager;
+import br.com.cpqd.instrumentacao.sige.activities.home.HomeActivity;
+import br.com.cpqd.instrumentacao.sige.activities.login.LoginActivity;
+import br.com.cpqd.instrumentacao.sige.services.SessionManager;
 import br.com.cpqd.instrumentacao.sige.typedef.intents;
 
 public class SplashActivity extends Activity {

@@ -1,4 +1,4 @@
-package br.com.cpqd.instrumentacao.sige.login.service;
+package br.com.cpqd.instrumentacao.sige.services;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -9,6 +9,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.net.UnknownHostException;
 
+import br.com.cpqd.instrumentacao.sige.net.HTTPConnector;
 import br.com.cpqd.instrumentacao.sige.typedef.intents;
 
 
@@ -17,12 +18,12 @@ public class SessionManager extends IntentService {
 
     private boolean isLogged;
 
-    private ConnectionManager connectionManager;
+    private HTTPConnector connectionManager;
 
     public SessionManager() {
         super("SIGE-SERVICE");
         isLogged = false;
-        connectionManager = new ConnectionManager();
+        connectionManager = new HTTPConnector();
         System.out.println("SessionManager started");
 
     }

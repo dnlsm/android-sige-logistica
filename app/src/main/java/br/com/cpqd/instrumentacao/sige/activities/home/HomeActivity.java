@@ -1,23 +1,17 @@
-package br.com.cpqd.instrumentacao.sige.home;
+package br.com.cpqd.instrumentacao.sige.activities.home;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.design.widget.NavigationView;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Adapter;
-import android.widget.HeaderViewListAdapter;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -25,11 +19,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 
 import br.com.cpqd.instrumentacao.sige.R;
-import br.com.cpqd.instrumentacao.sige.login.service.ConnectionManager;
+import br.com.cpqd.instrumentacao.sige.net.HTTPConnector;
 import br.com.cpqd.instrumentacao.sige.typedef.intents;
 
 public class HomeActivity extends Activity {
@@ -137,7 +130,7 @@ public class HomeActivity extends Activity {
         @Override
         protected MenuAdapter doInBackground(String... strings) {
             try {
-                ConnectionManager connectionManager = new ConnectionManager();
+                HTTPConnector connectionManager = new HTTPConnector();
                 String sampleListString;
                 sampleListString = connectionManager
                         .postToServer(

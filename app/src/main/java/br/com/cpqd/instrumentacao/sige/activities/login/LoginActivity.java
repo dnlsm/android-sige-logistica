@@ -1,15 +1,12 @@
-package br.com.cpqd.instrumentacao.sige.login;
+package br.com.cpqd.instrumentacao.sige.activities.login;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.os.BatteryManager;
 import android.os.Bundle;
 import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -21,10 +18,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.security.MessageDigest;
 
-import br.com.cpqd.instrumentacao.sige.LoginBroadcastReceiver;
+import br.com.cpqd.instrumentacao.sige.services.LoginBroadcastReceiver;
 import br.com.cpqd.instrumentacao.sige.R;
-import br.com.cpqd.instrumentacao.sige.home.HomeActivity;
-import br.com.cpqd.instrumentacao.sige.login.service.SessionManager;
+import br.com.cpqd.instrumentacao.sige.activities.home.HomeActivity;
+import br.com.cpqd.instrumentacao.sige.services.SessionManager;
 import br.com.cpqd.instrumentacao.sige.typedef.intents;
 
 public class LoginActivity extends Activity {

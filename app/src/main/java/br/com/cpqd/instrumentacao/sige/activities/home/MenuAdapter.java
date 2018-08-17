@@ -1,24 +1,19 @@
-package br.com.cpqd.instrumentacao.sige.home;
+package br.com.cpqd.instrumentacao.sige.activities.home;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import br.com.cpqd.instrumentacao.sige.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 
 import java.util.ArrayList;
 
 import static br.com.cpqd.instrumentacao.sige.R.*;
-import static br.com.cpqd.instrumentacao.sige.R.layout.*;
 
 public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder>{
 

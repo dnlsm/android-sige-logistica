@@ -1,13 +1,10 @@
-package br.com.cpqd.instrumentacao.sige;
+package br.com.cpqd.instrumentacao.sige.services;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.os.Bundle;
 
-import br.com.cpqd.instrumentacao.sige.home.HomeActivity;
-import br.com.cpqd.instrumentacao.sige.splash.SplashActivity;
 import br.com.cpqd.instrumentacao.sige.typedef.intents;
 
 public class LoginBroadcastReceiver extends BroadcastReceiver {

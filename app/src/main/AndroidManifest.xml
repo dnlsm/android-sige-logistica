@@ -10,14 +10,14 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name=".splash.SplashActivity">
+        <activity android:name=".activities.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".login.LoginActivity">
+        <activity android:name=".activities.login.LoginActivity">
             <intent-filter>
                 <action android:name="br.com.cpqd.answer.action.SUCCESSFULLY_LOGIN"/>
                 <action android:name="br.com.cpqd.answer.action.SUCCESSFULLY_LOGOUT"/>
@@ -28,9 +28,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".home.HomeActivity"></activity>
+        <activity android:name=".activities.home.HomeActivity"></activity>
 
-        <service android:name=".login.service.SessionManager">
+        <service android:name=".services.SessionManager">
             <intent-filter>
                 <action android:name="br.com.cpqd.ask.action.LOGIN"/>
                 <action android:name="br.com.cpqd.ask.action.LOGOUT"/>

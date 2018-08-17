@@ -1,4 +1,4 @@
-package br.com.cpqd.instrumentacao.sige.login.service;
+package br.com.cpqd.instrumentacao.sige.net;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.UnknownHostException;
 
-public class ConnectionManager {
+public class HTTPConnector {
     public String postToServer(String url, String postData) throws UnknownHostException, IOException {
 
         byte[] postDataBytes = postData.getBytes("UTF-8");
