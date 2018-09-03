@@ -21,7 +21,7 @@
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:layout_weight="1"
-        android:background="@color/onSurface"
+        android:background="@color/surface"
         android:baselineAligned="false"
         android:elevation="50dp"
         android:orientation="horizontal">
@@ -48,19 +48,23 @@
                 android:src="@mipmap/ic_launcher_foreground" />
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/analogous1">
                 <EditText
                     android:id="@+id/loginField"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="@string/username_field_name"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@color/analogous1"
+                    android:shadowColor="@color/analogous1"/>
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_height="wrap_content"
-                android:layout_width="match_parent">
+                android:layout_width="match_parent"
+                android:textColorHint="@color/analogous1">
 
                 <EditText
                     android:id="@+id/passwordField"
@@ -68,15 +72,17 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="@string/password_field_name"
-                    android:inputType="numberPassword" />
+                    android:inputType="numberPassword"
+                    android:textColor="@color/analogous1"
+                    android:shadowColor="@color/analogous1" />
             </android.support.design.widget.TextInputLayout>
 
-            <Button
+            <android.support.v7.widget.AppCompatButton
                 android:id="@+id/enterButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/colorAccent"
+                android:background="@color/analogous1_500"
                 android:hint="Entrar"
                 android:onClick="btnLogin"
                 android:text="Entrar"

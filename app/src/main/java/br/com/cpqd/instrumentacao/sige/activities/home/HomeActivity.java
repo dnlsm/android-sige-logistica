@@ -30,6 +30,7 @@ public class HomeActivity extends Activity {
     Intent activityIntent;
     private RecyclerView recyclerView;
 
+
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         System.out.println("LABORATÓRIO" + activityIntent.getStringExtra(intents.login.answer.PARAM_LABORATORY));

@@ -19,10 +19,28 @@
         <item name="android:itemTextAppearance">@color/complementary200</item>
     </style>
 
-    <style name="AppTheme.CardButton" parent="AppTheme">
+    <style name="AppTheme.SampleCardButton" parent="AppTheme">
         <item name="android:buttonStyle">
-            @style/Widget.AppCompat.Button.Borderless.Colored
+            @style/Widget.AppCompat.Button.Colored
         </item>
-        <item name="colorAccent">@color/analogous2_400</item>
+        <item name="colorAccent">@color/analogous1_50</item>
+    </style>
+    <style name="AppTheme.SampleInfoCardButton" parent="AppTheme">
+        <item name="android:imageButtonStyle">
+            @style/Widget.AppCompat.Button.Colored
+        </item>
+        <item name="colorAccent">@color/analogous1_50</item>
+    </style>
+    <style name="AppTheme.TransportCardButton" parent="AppTheme">
+        <item name="android:buttonStyle">
+            @style/Widget.AppCompat.Button.Colored
+        </item>
+        <item name="colorAccent">@color/analogous2_50</item>
+    </style>
+    <style name="AppTheme.TransportInfoCardButton" parent="AppTheme">
+        <item name="android:imageButtonStyle">
+            @style/Widget.AppCompat.Button.Colored
+        </item>
+        <item name="colorAccent">@color/analogous2_50</item>
     </style>
 </resources>
