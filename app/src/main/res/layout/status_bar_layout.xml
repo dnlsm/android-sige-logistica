@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:background="@color/colorPrimary"
     android:elevation="2dp">
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -25,5 +26,14 @@
             android:text="@string/app_tab_name"
             android:textColor="#ffffff"
             android:textAlignment="center" />
+
+        <ImageButton
+            android:id="@+id/search_icon_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/search_icon_white"
+            android:background="?attr/selectableItemBackground"/>
     </FrameLayout>
+
 </android.support.v7.widget.Toolbar>

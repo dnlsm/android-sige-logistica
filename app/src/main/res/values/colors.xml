@@ -24,7 +24,25 @@
     <color name="complementary100">#f6ddb2</color>
     <color name="complementary50">#fbf2e0</color>
 
-
+    <color name="green19">#000c00</color>
+    <color name="green18">#001900</color>
+    <color name="green17">#002600</color>
+    <color name="green16">#003300</color>
+    <color name="green15">#004000</color>
+    <color name="green14">#004c00</color>
+    <color name="green13">#005900</color>
+    <color name="green12">#006600</color>
+    <color name="green11">#007300</color>
+    <color name="green10">#008000</color>
+    <color name="green9">#198c19</color>
+    <color name="green8">#329932</color>
+    <color name="green7">#4ca64c</color>
+    <color name="green6">#66b266</color>
+    <color name="green5">#7fbf7f</color>
+    <color name="green4">#99cc99</color>
+    <color name="green3">#b2d8b2</color>
+    <color name="green2">#cce5cc</color>
+    <color name="green1">#e5f2e5</color>
     <color name="analogous1_900">#00624a</color>
     <color name="analogous1_800">#007f69</color>
     <color name="analogous1_700">#009078</color>
@@ -69,6 +87,46 @@
     <color name="triadic2_200">#f491c4</color>
     <color name="triadic2_100">#f7bcdc</color>
     <color name="triadic2_50">#fbe5f1</color>
+
+    <color name="red19">#190000</color>
+    <color name="red18">#330000</color>
+    <color name="red17">#4c0000</color>
+    <color name="red16">#660000</color>
+    <color name="red15">#7f0000</color>
+    <color name="red14">#990000</color>
+    <color name="red13">#b20000</color>
+    <color name="red12">#cc0000</color>
+    <color name="red11">#e50000</color>
+    <color name="red10">#ff0000</color>
+    <color name="red9">#ff1919</color>
+    <color name="red8">#ff3232</color>
+    <color name="red7">#ff4c4c</color>
+    <color name="red6">#ff6666</color>
+    <color name="red5">#ff7f7f</color>
+    <color name="red4">#ff9999</color>
+    <color name="red3">#ffb2b2</color>
+    <color name="red2">#ffcccc</color>
+    <color name="red1">#ffe5e5</color>
+
+    <color name="yellow19">#191900</color>
+    <color name="yellow18">#333300</color>
+    <color name="yellow17">#4c4c00</color>
+    <color name="yellow16">#666600</color>
+    <color name="yellow15">#7f7f00</color>
+    <color name="yellow14">#999900</color>
+    <color name="yellow13">#b2b200</color>
+    <color name="yellow12">#cccc00</color>
+    <color name="yellow11">#e5e500</color>
+    <color name="yellow10">#ffff00</color>
+    <color name="yellow9">#ffff19</color>
+    <color name="yellow8">#ffff32</color>
+    <color name="yellow7">#ffff4c</color>
+    <color name="yellow6">#ffff66</color>
+    <color name="yellow5">#ffff7f</color>
+    <color name="yellow4">#ffff99</color>
+    <color name="yellow3">#ffffb2</color>
+    <color name="yellow2">#ffffcc</color>
+    <color name="yellow1">#ffffe5</color>
 
 
     <color name="primary">@color/primary700</color>

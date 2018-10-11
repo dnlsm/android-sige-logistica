@@ -4,4 +4,17 @@
     <string name="username_field_name">usuário</string>
     <string name="password_field_name">senha</string>
     <string name="app_tab_name">SIGE - LOGÍSTICA</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="dialog_message_finalizar_transp">Deseja finalizar?</string>
+    <string name="dialog_title_confirmacao">Confirmação</string>
+    <string name="dialog_message_liberar_log_amostra">Deseja liberar para o externo?</string>
+    <string name="dialog_message_liberar_lab_amostra">Deseja liberar a amostra?</string>
+    <string-array name="spinner_laboratory_amostras">
+        <item>Automação</item>
+        <item>ACEM</item>
+        <item>RadioLab</item>
+        <item>APE</item>
+        <item>Externo</item>
+    </string-array>
 </resources>

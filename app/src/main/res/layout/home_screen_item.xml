@@ -14,16 +14,20 @@
     android:clipToPadding="false"
     card_view:cardBackgroundColor="@color/cardSurface"
     card_view:cardElevation="1dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <ImageView
+
             android:id="@+id/menuItemImage"
             android:background="@color/primary300"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:padding="4dp"/>
+            android:padding="4dp"
+            android:visibility="invisible"/>
 
         <LinearLayout
             android:id="@+id/sampleView"
@@ -39,14 +43,14 @@
                 android:padding="10dp">
 
                 <TextView
-                    android:id="@+id/sampleItemName"
+                    android:id="@+id/amostraName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_toLeftOf="@id/sampleItemCode"
+                    android:layout_toLeftOf="@id/amostraCode"
                     android:singleLine="true"
                     android:text=":NAME:"
-                    android:textSize="20dp" />
+                    android:textSize="16dp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -55,9 +59,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Item: " />
+                        android:text="Cód: " />
                     <TextView
-                        android:id="@+id/sampleItemCode"
+                        android:id="@+id/amostraCode"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=":CODE:"
@@ -69,9 +73,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Proc.: " />
+                        android:text="Protc: " />
                     <TextView
-                        android:id="@+id/sampleItemProcess"
+                        android:id="@+id/amostraProcess"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=":PROCESS:"
@@ -86,7 +90,7 @@
                         android:layout_height="wrap_content"
                         android:text="Lab.: " />
                     <TextView
-                        android:id="@+id/sampleItemLab"
+                        android:id="@+id/amotraLab"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=":LABORATORY:" />
@@ -101,16 +105,23 @@
                 android:layout_gravity="bottom">
 
                 <Button
+                    android:id="@+id/amostraButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="RETIRADA"
+                    android:text="LIBERAR"
+                    android:onClick="doRetirada"
                     android:theme="@style/AppTheme.SampleCardButton" />
+
                 <ImageButton
+                    android:id="@+id/amostraInfo"
+                    style="@style/Widget.AppCompat.ImageButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/menu_ico_info"
                     android:text="RETIRADA"
-                    android:theme="@style/AppTheme.SampleInfoCardButton" />
+                    android:theme="@style/AppTheme.SampleInfoCardButton"
+                    android:backgroundTint="@color/analogous1_50"
+                    android:elevation="@dimen/cardview_default_elevation"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -119,8 +130,7 @@
             android:id="@+id/transportView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:visibility="gone">
+            android:orientation="vertical" >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -129,49 +139,76 @@
                 android:padding="10dp">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
                         android:id="@+id/transportItemFrom"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
                         android:layout_alignParentLeft="true"
-                        android:layout_toLeftOf="@id/sampleItemCode"
+                        android:layout_toLeftOf="@id/amostraCode"
                         android:singleLine="true"
                         android:text=":FROM:"
-                        android:textSize="20dp" />
+                        android:textSize="16dp" />
                     <ImageView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
                         android:src="@drawable/menu_ico_from_to"
                         android:layout_gravity="bottom"/>
                     <TextView
                         android:id="@+id/transportItemTo"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
                         android:layout_alignParentLeft="true"
-                        android:layout_toLeftOf="@id/sampleItemCode"
+                        android:layout_toLeftOf="@id/amostraCode"
                         android:singleLine="true"
                         android:text=":TO:"
-                        android:textSize="20dp" />
+                        android:textSize="16dp" />
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Protocolo: " />
+                        android:text="Protc: " />
                     <TextView
                         android:id="@+id/transportItemProtocol"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=":PROCESS:"
                         android:textSize="11dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/ Cód: " />
+                        <TextView
+                            android:id="@+id/transportItemCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":CODE:"
+                            android:textSize="11dp" />
+                    </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
 
                     android:layout_width="wrap_content"
@@ -204,20 +241,27 @@
                 android:layout_gravity="bottom">
 
                 <Button
+                    android:id="@+id/transportationButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="REALIZAR"
-                    android:theme="@style/AppTheme.TransportCardButton"
+                    android:backgroundTint="@color/analogous2_50"
                     android:onClick="doTransport"/>
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/transportInfo"
                     android:src="@drawable/menu_ico_info"
-                    android:theme="@style/AppTheme.TransportInfoCardButton" />
+                    android:theme="@style/AppTheme.TransportInfoCardButton"
+                    android:backgroundTint="@color/analogous2_50"
+                    android:elevation="@dimen/cardview_default_elevation"/>
             </LinearLayout>
+
 
         </LinearLayout>
 
+
     </LinearLayout>
+
 
 </android.support.v7.widget.CardView>

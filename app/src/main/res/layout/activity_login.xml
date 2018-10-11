@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/surface"
     android:orientation="vertical"
-    tools:context=".activities.login.LoginActivity">
+    tools:context=".activities.LoginActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -84,7 +84,7 @@
                 android:layout_weight="1"
                 android:background="@color/analogous1_500"
                 android:hint="Entrar"
-                android:onClick="btnLogin"
+                android:onClick="onLoginClick"
                 android:text="Entrar"
                 android:textColor="#000000" />
 
